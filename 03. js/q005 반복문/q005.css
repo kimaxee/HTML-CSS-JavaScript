@@ -1,0 +1,7 @@
+.cat {
+    width: 100px;
+    height: 100px;
+    border: solid 10px pink;
+    border-radius: 20%;
+    margin: 10px;
+}
