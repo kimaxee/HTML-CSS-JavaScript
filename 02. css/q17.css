@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    width: 1000px;
+    height: 100px;
+    background-color: pink;
+    justify-content: center;
+}
+.one {
+    background-color: red;
+    width: 100px;
+}

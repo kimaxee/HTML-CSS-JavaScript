@@ -1,0 +1,68 @@
+body {
+    background-color: chartreuse;
+}
+
+#top1 {
+    background-color: red;
+    width: 500px;
+    height: 150px;
+    float: left;
+}
+
+#top2 {
+    background-color: orange;
+    width: 500px;
+    height: 150px;
+    float: left;
+}
+
+#main {
+    background-color: yellow;
+    width: 1000px;
+    height: 100px;
+    clear: left;
+}
+
+#menu1 {
+    background-color: green;
+    width: 150px;
+    height: 500px;
+    float: left;
+}
+
+#menu2 {
+    background-color: blue;
+    width: 600px;
+    height: 500px;
+    float: left;
+}
+
+#menu3 {
+    background-color: pink;
+    width: 250px;
+    height: 500px;
+    float: left;
+}
+
+#bottom1 {
+    background-color: purple;
+    width: 500px;
+    height: 100px;
+    clear: left;
+    float: left;
+}
+
+#bottom2 {
+    background-color: black;
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+
+#bottom3 {
+    background-color: white;
+    width: 1000px;
+    height: 200px;
+    float: left;
+    clear: left;
+}

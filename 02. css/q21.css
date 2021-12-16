@@ -1,0 +1,33 @@
+#box {
+    display: grid;
+    background-color: black;
+    width: 1200px;
+    height: 1200px;
+    justify-content: center;
+    align-content: center;
+}
+.container {
+    display: grid;
+    width: 1000px;
+    height: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.A {
+    background-color: red;
+}
+.B {
+    background-color: orange;
+}
+.C {
+    background-color: yellow;
+}
+.D {
+    background-color: green;
+}
+.E {
+    background-color: blue;
+}
+.F {
+    background-color: purple;
+}

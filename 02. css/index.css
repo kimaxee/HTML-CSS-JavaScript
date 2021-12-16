@@ -1,0 +1,123 @@
+body {
+    background-image: url('https://upload3.inven.co.kr/upload/2021/02/25/bbs/i15745445892.jpg');
+}
+#myLayout {
+    background-color: greenyellow;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/******************상단 영역 ******************/
+#top {
+    background-color: red;
+    width: 1600px;
+    height: 160px;
+}
+#top_left {
+    background-color: green;
+    position: absolute;
+}
+#logo {
+    width: 100px; height: 100px; margin: 10px;
+    float: left;
+}
+#homepage_name {
+    color: yellow;
+    font-size: 20px; font-style: italic; font-weight: 600;
+    float: left;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+#top_banner {
+    background-color: violet;
+    width: 1600px;
+    height: 120px;
+    text-align: center;
+}
+#banner {
+    margin-left: auto;
+    margin-right: auto;
+}
+#nav {
+    background-color: gray;
+    color: white;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+/****************왼쪽 중단 영역 ****************/
+#left {
+    background-color: orange;
+    height: 800px;
+    width: 200px;
+    float: left;
+}
+/******************로그인 영역 ******************/
+#login {
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+}
+#login_id {
+    width: 100px;
+}
+#login_pw {
+    width: 100px;
+}
+/******************게시판 영역 ******************/
+#board {
+    background-color: red;
+    width: 160px; height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+ .board_title {
+       color: springgreen;
+       text-align: center;
+       font-size: 1.2em;
+       font-style: italic;
+       font-weight: 600;
+    }
+ #board_2 {
+    background-color: pink;
+    width: 160px; height: 100px;
+    margin: 10px;
+    padding: 10px;
+ }
+/******************가운데영역 ******************/
+#mid {
+    background-color: yellow;
+    width: 1200px; height: 800px;
+    float: left;
+}
+.mid_img_box {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: springgreen;
+}
+/******************오른쪽영역 ******************/
+#right {
+    background-color: green;
+    width: 200px;
+    height: 800px;
+    float: left;
+}
+    .right_banner {
+        width: 200px;
+    }     
+/******************하단 ******************/
+#bot {
+    background-color: blue;
+    width: 1600px;
+    height: 200px;
+    bottom: 10px;
+    position: fixed;
+
+    font-size: 1em;
+    color: white;
+}

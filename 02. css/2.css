@@ -1,0 +1,26 @@
+#topmenu {
+    height: 30px;
+    width: 850px;
+}
+#topmenu ul li {
+    list-style: none;
+    color: white;
+    background-color: #2d2d2d;
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+#topmenu .menulink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 150px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#topmenu .menulink:hover {
+    color: red;
+    background-color: #4d4d4d;
+}

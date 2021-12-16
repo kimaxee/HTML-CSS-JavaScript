@@ -1,0 +1,10 @@
+#center {
+    padding: 10px; 
+    border: 20px; border-style: solid; color: blue; border-radius: 50%/20px;
+    margin: 30px;
+}
+
+.last {
+    padding: 30px;
+    border: 40px solid; color: red; border-radius: 50%;
+}

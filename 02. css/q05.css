@@ -1,0 +1,34 @@
+#a {
+    background-color: red;
+    width: 600px;
+    height: 100px;
+    float: left;
+}
+
+#b {
+    background-color: orange;
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+#c {
+    background-color: yellow;
+    width: 800px;
+    height: 100px;
+    clear: left;
+}
+
+#d {
+    background-color: green;
+    width: 300px;
+    height: 650px;
+    float: left;
+}
+
+#e {
+    background-color: blue;
+    width: 500px;
+    height: 650px;
+    float: left;
+}
