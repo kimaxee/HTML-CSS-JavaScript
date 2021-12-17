@@ -11,6 +11,7 @@ function popup(age, type, name) {
 
 }
 
+
 popup(100, "잡종", "야옹이");
 
 popup(10, "페르시안", "나비");
