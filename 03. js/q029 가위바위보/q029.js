@@ -1,3 +1,7 @@
+/* 가위바위보 */
+// v0.01 //
+
+
 var player = prompt("가위, 바위, 보를 입력하세요")
 var computer = Math.floor(Math.random() * 3) + 1
 
