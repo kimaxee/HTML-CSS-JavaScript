@@ -1,9 +1,10 @@
 var player = "";
-var computer = Math.floor(Math.random() * 3) + 1
+var computer = 0;
 
-labelA:
+
 while (true) {
   player = prompt("가위, 바위, 보를 입력하세요" + "\n종료 : 나가기")
+  computer = Math.floor(Math.random() * 3) + 1
   if (player == "가위" || player == "바위" || player == "보") {
     switch (player) {
       case "가위":
@@ -19,7 +20,6 @@ while (true) {
           alert("컴퓨터 : 보 \n플레이어 : 승리");
         }
         break;
-
 
       case "바위":
         if (3 == computer) {
@@ -50,6 +50,7 @@ while (true) {
         break;
     }
   }
+
   else if (player == "나가기") {
     dw("수고하셨습니다");
     break;
@@ -58,3 +59,4 @@ while (true) {
     alert("잘못 입력했습니다");
   }
 }
+
