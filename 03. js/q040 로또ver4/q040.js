@@ -204,11 +204,6 @@ else if (myLotto[5] == comLotto[5]) {
 
 var ranking = 0;
 
-//winCount (4개 일치) = 4등
-//winCount (5개 일치) = 3등
-//winCount (6개 일치) = 1등
-//만약 winCount 가 4개 일치하면 4등이다.
-
 if (winCount) {
     if (winCount == 3) {
         ranking = 5;
