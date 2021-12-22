@@ -23,7 +23,7 @@ function Monster(name, hp, attack) {
     this.attack = attack;
 
     this.info = function () {
-        dw("몬스터 이름 : " + name + "<hr>" + "몬스터 체력 : " + hp + "<hr>" + "몬스터 공격력 : " + attack);
+        dw("<hr>" + "몬스터 이름 : " + name + "<hr>" + "몬스터 체력 : " + hp + "<hr>" + "몬스터 공격력 : " + attack);
         hr(); hr();
     }
 
