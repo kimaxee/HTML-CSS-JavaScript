@@ -9,8 +9,8 @@ V0.8.0
   변경되었습니다.
 *************************************/
 
-var orc = new Monster("오크", 1000, 100, 100);
-var elf = new Character("엘프", 800, 150, 100, 100);
+var orc = new Monster("오크", 1000, 100, 50, 50);
+var elf = new Character("엘프", 800, 150, 100, 100, 300);
 
 function characterInfo () {
    
@@ -32,29 +32,25 @@ function getRandomAttackValue(attack) {
   var random = Math.floor(Math.random() * attack);
   return random;
 }
-
-function getCharacterExpValue(currentExp) {
-  return currentExp = 50;
+function getRandomGoldValue(gold) {
+  gold = gold + 1;
+  var random = Math.floor(Math.random() * gold);
+  return random;
 }
 
-function getCharacterGoldValue(gold) {
-  return gold = 50;
-}
 
 
 function battleCharacterInfo() {
 
   var monsterAttack = 0;
   var characterAttack = 0;
-  var getExp = 0;
-  var getGold = 0;
+  var monsterRewardGold = 0;
   
   
   while (true) {
     monsterAttack = getRandomAttackValue(orc.attack);
     characterAttack = getRandomAttackValue(elf.attack);
-    getExp = getCharacterExpValue(elf.currentExp);
-    getGold = getCharacterGoldValue(orc.gold);
+    monsterRewardGold = getRandomGoldValue(orc.gold);
     orc.currentHp = orc.currentHp - characterAttack;
     elf.currentHp = elf.currentHp - monsterAttack;
     
@@ -64,11 +60,12 @@ function battleCharacterInfo() {
       orc.info();
       elf.info();br();
       dw("<hr>" + orc.name + "가 죽었습니다");  
-      dw("<hr><hr>★ 전투종료 ★<hr> " + elf.name + "가 경험치 " + getExp + "만큼 획득했습니다.");
+      dw("<hr><hr>★ 전투종료 ★<hr> " + elf.name + "가 경험치 " + orc.exp + "만큼 획득했습니다.");
       br();
-      dw(elf.name + "가 " + getGold + "Gold를 획득했습니다");
+      dw(elf.name + "가 " + monsterRewardGold + "Gold를 획득했습니다");
       br();
-      elf.currentExp = elf.currentExp + getExp;
+      elf.currentExp = elf.currentExp + orc.exp;
+      elf.gold = elf.gold + monsterRewardGold;
       elf.info();
       break;
     }
@@ -78,11 +75,12 @@ function battleCharacterInfo() {
       orc.info();
       elf.info();br();
       dw("<hr>" + elf.name + "가 죽었습니다");
-      dw("<hr><hr>★ 전투종료 ★<hr> " + elf.name + "가 경험치 " + getExp + "만큼 잃었습니다.");
+      dw("<hr><hr>★ 전투종료 ★<hr> " + elf.name + "가 경험치 " + orc.exp + "만큼 잃었습니다.");
       br();
-      dw(elf.name + "가 " + getGold + "Gold를 잃었습니다");
+      dw(elf.name + "가 " + monsterRewardGold + "Gold를 잃었습니다");
       br();
-      elf.currentExp = elf.currentExp - getExp;
+      elf.currentExp = elf.currentExp - orc.exp;
+      elf.gold = elf.gold - monsterRewardGold;
       elf.info();
       break;
     }
