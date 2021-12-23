@@ -8,12 +8,11 @@ V0.6.0
   적의 currentHp 가 0 이하로 될 때까지(죽을때 까지)
   전투 반복 처리					
 *************************************/
+var orc = new Monster("오크", 1000, 100);
+var elf = new Character("엘프", 800, 150);
 
 function characterInfo () {
-  
-  var orc = new Monster("오크", 1000, 100);
-  var elf = new Character("엘프", 800, 100);
-  
+   
   orc.info();
   elf.info();
   hr(); hr();
@@ -62,11 +61,11 @@ function battleCharacterInfo() {
       dw("<hr>" + elf.name + "가 죽었습니다");
       break;
     }
-    else if (orc.currentHp > 0) {
+    if (orc.currentHp > 0) {
       dw(orc.name + "가 " + characterAttack + "의 피해를 받았습니다.<br>")
     }
         
-    else if (elf.currentHp > 0) {
+    if (elf.currentHp > 0) {
       dw(elf.name + "가 " + monsterAttack + "의 피해를 받았습니다.<br>")
     }
     orc.info();
