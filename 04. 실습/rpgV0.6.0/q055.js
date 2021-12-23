@@ -12,7 +12,7 @@ V0.6.0
 function characterInfo () {
   
   var orc = new Monster("오크", 1000, 100);
-  var elf = new Character("엘프", 800, 100);
+  var elf = new Character("엘프", 800, 150);
   
   orc.info();
   elf.info();
