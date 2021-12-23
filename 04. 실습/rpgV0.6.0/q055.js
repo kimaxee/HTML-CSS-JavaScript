@@ -62,11 +62,11 @@ function battleCharacterInfo() {
       dw("<hr>" + elf.name + "가 죽었습니다");
       break;
     }
-    else if (orc.currentHp > 0) {
+    if (orc.currentHp > 0) {
       dw(orc.name + "가 " + characterAttack + "의 피해를 받았습니다.<br>")
     }
         
-    else if (elf.currentHp > 0) {
+    if (elf.currentHp > 0) {
       dw(elf.name + "가 " + monsterAttack + "의 피해를 받았습니다.<br>")
     }
     orc.info();
