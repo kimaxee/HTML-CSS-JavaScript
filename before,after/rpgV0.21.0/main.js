@@ -22,13 +22,13 @@ var roomArray = [
 ];
 /* 몬스터 배치 */
 var monsterArray = [
-    new Monster("허수아비", 100, 1, 1001, "N"),    
-    new Monster("허수아비", 100, 1, 1002, "N"),    
-    new Monster("허수아비", 100, 1, 1003, "N"),    
-    new Monster("허수아비", 100, 1, 1004, "N"),    
-    new Monster("쥐", 50, 5, 1006, "H"),
-    new Monster("쥐", 50, 5, 1005, "H"),
-    new Monster("왕쥐", 150, 15, 1006, "H")
+    new Monster("001","허수아비", 100, 1, 1001, "N"),    
+    new Monster("002","허수아비", 100, 1, 1002, "N"),    
+    new Monster("003","허수아비", 100, 1, 1003, "N"),    
+    new Monster("004","허수아비", 100, 1, 1004, "N"),    
+    new Monster("005","쥐", 50, 5, 1006, "H"),
+    new Monster("006","쥐", 50, 5, 1005, "H"),
+    new Monster("007","왕쥐", 150, 15, 1006, "H")
 ]
 
 window.onload = function () {
