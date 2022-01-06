@@ -1,0 +1,10 @@
+#screen_Message_Box {
+    width: 1000px;
+    height: 1000px;
+    background-color: yellow;
+}
+#screen_Player_Info {
+    width: 1000px;
+    height: 100px;
+    background-color: pink;
+}

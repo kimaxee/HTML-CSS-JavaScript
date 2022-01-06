@@ -1,8 +1,8 @@
+var orc = new Monster("오크", 1000, 100);
+var elf = new Character("엘프", 800, 150);
+
 function characterInfo () {
-  
-  var orc = new Monster("오크", 1000, 100);
-  var elf = new Character("엘프", 800, 150);
-  
+   
   orc.info();
   elf.info();
   hr(); hr();
