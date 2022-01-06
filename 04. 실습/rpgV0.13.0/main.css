@@ -1,0 +1,20 @@
+#screen_game_object {
+    width: 1000px;
+    height: 100px;
+    background-color: greenyellow;
+}
+#screen_Message_Box {
+    width: 1000px;
+    height: 600px;
+    background-color: yellow;
+}
+#screen_Player_Info {
+    width: 1000px;
+    height: 100px;
+    background-color: pink;
+}
+#input_txt_turn {
+    background-color: orange;
+    width: 50px;
+    text-align: right;
+}
