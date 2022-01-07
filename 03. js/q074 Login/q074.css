@@ -1,0 +1,40 @@
+#login_screen{
+    background-color: cornflowerblue;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login_box {
+    width: 200px;
+    background-color: chartreuse;
+    border: solid black 10px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+}
+
+
+
+/*  선생님
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;
+    height: 800px;
+    background-color: gold;
+}
+#login_box {
+    width: 260px;     
+    background-color: pink;
+    border: 1px blue solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+*/

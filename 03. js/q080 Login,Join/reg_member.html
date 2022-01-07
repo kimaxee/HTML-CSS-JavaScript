@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="common.js"></script>
+    <script src="reg_member.js"></script>
+    <link rel="stylesheet" href="reg_member.css">
+</head>
+
+<body>
+    <form id="member_join">
+        <fieldset id="member_join_box">
+            <legend>회원가입</legend>
+            <ul>
+                <li><label class="reg" for="member_id">아이디</label>
+                    <input id="member_id" type="text" size="18" minlength="4" maxlength="12" placeholder="4자리이상,12자리이하" required oninput="textLengthCheckId()">
+                </li>
+                <li><label class="reg" for="member_pw1" >암호</label>
+                    <input id="member_pw1" type="password" size="18" minlength="4" maxlength="12" placeholder="4자리이상,12자리이하" required oninput="textLengthCheckPw1()">
+                </li>
+                <li><label class="reg" for="member_pw2">암호 재입력</label>
+                    <input id="member_pw2" type="password" size="18" minlength="4" maxlength="12" placeholder="4자리이상,12자리이하" required oninput="confirmPassword()"><span id="confirm_pw"></span>
+                </li>
+                <li><label class="reg" for="member_name">이름</label>
+                    <input id="member_name" type="text" size="18" minlength="2" maxlength="6" placeholder="2자리이상,6자리이하" required oninput="textLengthCheckName()">
+                </li>
+                <li><label class="reg" for="member_email">이메일</label>
+                    <input id="member_email" type="email" size="18" minlength="4" maxlength="25" placeholder="4자리이상,25자리이하" required oninput="textLengthCheckEmail()">
+                </li>
+                <li><label class="reg" for="member_birthday">생년월일</label>
+                    <input id="member_birthday" type="text"  size="2">년
+                    <select class="birth" id="birth_m">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>월
+                    <select class="birth" id="birth_d">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>일
+                </li>
+                <!-- <li><label class="reg" for="member_birthday">생년월일</label>
+                    <input id="member_birthday" type="date">
+                </li> -->
+                <li><label class="reg" for="member_sex">성별</label>
+                    <input id="member_sex" type="radio" name="sex" value="M" checked>남성
+                    <input id="member_sex" type="radio" name="sex" value="F">여성
+                </li>
+                <li><label class="reg" for="member_number1">핸드폰번호</label>
+                    <input id="member_number1" type="tel" size="3" maxlength="3" value="010" required> -
+                    <input id="member_number2" type="tel" size="3" maxlength="4" required> -
+                    <input id="member_number3" type="tel" size="3" maxlength="4" required>
+                </li>
+                <input type="button" id="member_join_complete" value="회원가입" onclick="completeJoin();">
+            </ul>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
