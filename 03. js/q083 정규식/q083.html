@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="common.js"></script>
+</head>
+
+<body>
+    <form for="number">
+        <legend>숫자만</legend>
+        <input id="only_number" type="text" pattern = "^[0-9]+$">
+        <input type="submit">
+    </form>
+    <form for="englsh_case">
+        <legend>영문 대소문자만</legend>
+        <input id="only_englsh_case" type="text" pattern = "^[a-zA-Z]+$">
+        <input type="submit">
+    </form>
+    <form for="englsh_case2">
+        <legend>영문 대소문자만(띄어쓰기 공백 가능)</legend>
+        <input id="only_englsh_case2" type="text" pattern = "^[a-zA-Z\s]+$">
+        <!-- <input type="text" oninput="this.value = this.value.replace(/[^a-z|A-Z]/, '');"> -->
+        <input type="submit">
+    </form>
+    <form for="number_englsh">
+        <legend>숫자,영문 대소문자만</legend>
+        <input id="only_number_englsh" type="text" name="patternValue" pattern="^[a-zA-Z0-9]+$">
+        <input type="submit">
+    </form>
+    <form for="pw">
+        <legend>8~16자리 숫자,영문,특수문자 각1개 포함</legend>
+        <input id="only_pw" type="text" name="patternValue" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
