@@ -1,0 +1,41 @@
+#top {
+    height: 200px;
+    width: 1600px;
+    background-color: red;
+}
+
+#left {
+    height: 600px;
+    width: 800px;
+    background-color: orange;
+    float: left;
+}
+
+
+#right {
+    height: 600px;
+    width: 800px;
+    background-color: yellow;
+    float: left;
+}
+
+#bot {
+    height: 200px;
+    width: 1600px;
+    background-color: green;
+    float: left;
+}
+#popup {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+}
+
+#btn {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 150px;
+}
